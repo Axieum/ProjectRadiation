@@ -1,0 +1,14 @@
+[
+{
+  "modid": "projectradiation",
+  "name": "Project Radiation",
+  "description": "The Earth's atmosphere is experiencing high levels of radiation.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "authorList": ["Axiom"],
+  "credits": "Galacticraft team for their oxygen system.",
+  "logoFile": "",
+  "requiredMods": ["galacticraftcore"],
+  "dependencies": ["galacticraftcore"]
+}
+]
