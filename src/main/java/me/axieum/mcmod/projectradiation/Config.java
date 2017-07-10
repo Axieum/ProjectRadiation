@@ -8,7 +8,7 @@ public class Config
 {
 	
 	// Config options
-	// --
+	public static boolean ACHIEVEMENTS;
 	
 	// Load
 	public static void load()
@@ -21,7 +21,7 @@ public class Config
 		config.addCustomCategoryComment(References.CONFIG_CATEGORY_ENABLES, "Enable/Disable an aspect of the mod.");
 
 		// Initialise config options
-		// --
+		ACHIEVEMENTS = config.get(References.CONFIG_CATEGORY_ENABLES, "Achievements", true).getBoolean();
 		
 		// Save the config ready for use
 		config.save();

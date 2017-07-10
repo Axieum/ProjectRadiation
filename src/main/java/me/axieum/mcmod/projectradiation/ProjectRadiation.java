@@ -37,6 +37,10 @@ public class ProjectRadiation
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
+    	// Initialise and register achievements
+    	if (Config.ACHIEVEMENTS)
+    		Achievements.init();
+    	
     	proxy.postInit(event);
     }
     
