@@ -22,6 +22,9 @@ public class ProjectRadiation
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+		// Initialise and load the config
+    	Config.load();
+    	
     	proxy.preInit(event);
     }
     

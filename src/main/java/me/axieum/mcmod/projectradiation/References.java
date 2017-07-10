@@ -23,4 +23,8 @@ public class References
 	public static final String PROXY_CLIENT = "me.axieum.mcmod.projectradiation.proxy.ClientProxy";
 	public static final String PROXY_SERVER = "me.axieum.mcmod.projectradiation.proxy.ServerProxy";
 	
+	// Configuration
+	public static final String CONFIG_FILE = "config/ProjectRadiation.cfg";
+	public static final String CONFIG_CATEGORY_ENABLES = "enables";
+	
 }
