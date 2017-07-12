@@ -17,6 +17,8 @@ public class Achievements
 	
 	// Achievements
 	public static Achievement achievement_landing;
+	public static Achievement achievement_craft_oxygen_medium;
+	public static Achievement achievement_craft_oxygen_heavy;
 	
 	public static void init()
 	{
@@ -33,6 +35,16 @@ public class Achievements
 			achievement_landing = new Achievement("achievement.landing", "landing", 0, 0, GCItems.oxTankLight, (Achievement) null).setSpecial().registerStat();
 			list.add(achievement_landing);
 		}
+		
+		// Crafting
+		if (Config.ACHIEVEMENTS_LOGIN)
+			achievement_craft_oxygen_medium = new Achievement("achievement.oxygen.medium", "oxygen.medium", 2, 0, GCItems.oxTankMedium, achievement_landing).registerStat();
+		else
+			achievement_craft_oxygen_medium = new Achievement("achievement.oxygen.medium", "oxygen.medium", 2, 0, GCItems.oxTankMedium, (Achievement) null).registerStat();
+		list.add(achievement_craft_oxygen_medium);
+		
+		achievement_craft_oxygen_heavy = new Achievement("achievement.oxygen.heavy", "oxygen.heavy", 4, 0, GCItems.oxTankHeavy, achievement_craft_oxygen_medium).registerStat();
+		list.add(achievement_craft_oxygen_heavy);
 	}
 	
 	private static void initPages()

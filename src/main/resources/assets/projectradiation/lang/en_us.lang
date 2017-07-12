@@ -1,3 +1,7 @@
 #Achievements
 achievement.landing=Fresh Air?
 achievement.landing.desc=Radiation has polluted the atmosphere
+achievement.oxygen.medium=More Oxygen!
+achievement.oxygen.medium.desc=Obtain a medium oxygen tank
+achievement.oxygen.heavy=Plentiful Supply of Oxygen
+achievement.oxygen.heavy.desc=Obtain a heavy oxygen tank
