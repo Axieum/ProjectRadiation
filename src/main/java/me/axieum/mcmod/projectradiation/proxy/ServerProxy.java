@@ -19,7 +19,7 @@ public class ServerProxy extends CommonProxy
     
     public void postInit(FMLPostInitializationEvent event)
     {
-        //
+    	//
     }
 	
 }

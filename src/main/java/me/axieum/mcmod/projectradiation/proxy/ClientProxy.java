@@ -1,5 +1,7 @@
 package me.axieum.mcmod.projectradiation.proxy;
 
+import me.axieum.mcmod.projectradiation.event.EventClientHandler;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -19,6 +21,8 @@ public class ClientProxy extends CommonProxy
     
     public void postInit(FMLPostInitializationEvent event)
     {
+    	MinecraftForge.EVENT_BUS.register(new EventClientHandler());
+    	
         super.postInit(event);
     }
 	
